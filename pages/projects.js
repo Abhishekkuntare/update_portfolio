@@ -31,7 +31,7 @@ const Projects = () => {
         justifyContent="center"
         flexDirection="row"
       >
-        <Box marginRight={10} maxW="lg" overflow="hidden">
+        <Box maxW="lg" overflow="hidden">
           <Image borderRadius={10} src={web.imageUrl} alt={web.imageAlt} />
           <Box
             cursor={'pointer'}
@@ -63,7 +63,7 @@ const Projects = () => {
         justifyContent="center"
         flexDirection="row"
       >
-        <Box marginRight={10} maxW="lg" overflow="hidden">
+        <Box maxW="lg" overflow="hidden">
           <Image borderRadius={10} src={app.imageUrl} alt={app.imageAlt} />
           <Box
             cursor={'pointer'}
@@ -95,7 +95,7 @@ const Projects = () => {
         justifyContent="center"
         flexDirection="row"
       >
-        <Box marginRight={10} maxW="lg" overflow="hidden">
+        <Box maxW="lg" overflow="hidden">
           <Image
             borderRadius={10}
             src={machine.imageUrl}
@@ -131,7 +131,7 @@ const Projects = () => {
         justifyContent="center"
         flexDirection="row"
       >
-        <Box marginRight={10} maxW="lg" overflow="hidden">
+        <Box maxW="lg" overflow="hidden">
           <Image
             borderRadius={10}
             src={python.imageUrl}

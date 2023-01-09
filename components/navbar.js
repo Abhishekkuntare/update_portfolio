@@ -123,6 +123,12 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <LinkItem href="/works" path={path}>
+            Web
+          </LinkItem>
+          <LinkItem href="/androidWorks" path={path}>
+            App
+          </LinkItem>
 
           {user.value && (
             <Menu>
@@ -145,17 +151,6 @@ const Navbar = props => {
               </MenuList>
             </Menu>
           )}
-          {!user.value && (
-            <LinkItem href="/contact" path={path}>
-              Contact
-            </LinkItem>
-          )}
-          <LinkItem href="/signUp" path={path}>
-            SignIn
-          </LinkItem>
-          <LinkItem href="/team" path={path}>
-            Team
-          </LinkItem>
         </Stack>
 
         {/* for mobile ------------------------------------------------- */}
@@ -171,20 +166,17 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="/signUp" passHref>
-                  <MenuItem as={Link}>SignUp</MenuItem>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Web</MenuItem>
                 </NextLink>
-                <NextLink href="/team" passHref>
-                  <MenuItem as={Link}>Team</MenuItem>
+                <NextLink href="/androidWorks" passHref>
+                  <MenuItem as={Link}>App</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

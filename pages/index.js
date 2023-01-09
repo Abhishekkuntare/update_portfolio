@@ -16,7 +16,12 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoGithub, IoLinkSharp, IoCodeSharp } from 'react-icons/io5'
+import {
+  IoLogoGithub,
+  IoLinkSharp,
+  IoCodeSharp,
+  IoLogoLinkedin
+} from 'react-icons/io5'
 import { BiCodeCurly } from 'react-icons/bi'
 const Home = () => (
   <Layout>
@@ -45,13 +50,13 @@ const Home = () => (
           textAlign="center"
         >
           <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
+            borderColor="blue.100"
+            borderWidth={3}
             borderStyle="solid"
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/Abhishek.jpg"
+            src="/images/abhi.jpg"
             alt="Profile image"
           />
         </Box>
@@ -62,17 +67,13 @@ const Home = () => (
           Intro
         </Heading>
         <Paragraph>
-          My self Abhishek pravin Kuntare. Im a Software Developer from
-          Amravati. Im a quick learner and ready to take new challenges. I use
-          Java,C++,C ,Python as a Programming language.I know the little bit
-          Technology language such as HTML , CSS , Tailwind css, Chakara Ui
-          ,BootStrap for Styling, for Develping React js , Next js, Node js
-          ,Express js .Database i use MongoDB. For Developing Android/Web/Ios
-          app ill use the React Native as a Programming language.
+          My Self Abhishek P. Kuntare I'm a Software Developer from Amravati.
+          I'm Programming enthusiast. I'm quick learner and ready to take new
+          challenges
         </Paragraph>
-        <NextLink href="/works/inkdrop">
+        {/* <NextLink href="/works/inkdrop">
           <Link>Astro</Link>
-        </NextLink>
+        </NextLink> */}
         <Box align="center" my={4}>
           <NextLink href="https://abhishekkuntare2002.web.app/">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -125,7 +126,7 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLinkSharp} />}
+                leftIcon={<Icon as={IoLogoLinkedin} />}
               >
                 @Linkdin
               </Button>
@@ -151,7 +152,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<Icon as={BiCodeCurly} />}
               >
-                @LitCode
+                @LeetCode
               </Button>
             </Link>
           </ListItem>
@@ -167,6 +168,20 @@ const Home = () => (
                 leftIcon={<Icon as={IoCodeSharp} />}
               >
                 @CodeChef
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://codeforces.com/profile/abhishekkuntare7"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoCodeSharp} />}
+              >
+                @CodeForces
               </Button>
             </Link>
           </ListItem>

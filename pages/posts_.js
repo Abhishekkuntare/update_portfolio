@@ -10,7 +10,6 @@ import {
   Container,
   Badge
 } from '@chakra-ui/react'
-import OpenImg from './openImg'
 
 export const BlogAuthor = props => {
   return (
@@ -110,7 +109,6 @@ const ArticleList = ({ name, image, title, desc, author, date, color, id }) => {
         </Box>
       </Container>
 
-      {open && <OpenImg SetOpen={SetOpen} />}
     </>
   )
 }

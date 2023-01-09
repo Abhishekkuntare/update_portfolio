@@ -4,6 +4,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
+import Abhishek from '../../components/Slider_ast'
 
 const Work = () => (
   <Layout title="Astro">
@@ -40,6 +41,7 @@ const Work = () => (
       <WorkImage src="/images/works/Astro01.png" alt="Inkdrop" />
       <WorkImage src="/images/works/Astro02.png" alt="Inkdrop" />
     </Container>
+    <Abhishek />
   </Layout>
 )
 

@@ -8,10 +8,10 @@ import fortnite from '../public/images/works/fortnite.png'
 import DisneyPlus from '../public/images/works/DisneyPlus.png'
 import tesla from '../public/images/works/tesla.png'
 import netflix from '../public/images/works/netflix.png'
-// import weather from '../public/images/works/weather.png'
 import textutilis from '../public/images/works/textutilis.png'
-// import univercity from '../public/images/works/univercity.png'
 import lambo from '../public/images/works/lambo.png'
+import p2 from '../public/images/works/p2.png'
+import po3 from '../public/images/works/po3.webp'
 
 const Works = () => (
   <Layout title="Works">
@@ -21,6 +21,18 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem id="pokemon" title="Pokemon" thumbnail={po3}>
+            Pokemon is just a information about all the pokemons including
+            search funtionaliy
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="persistence" title="Persistence" thumbnail={p2}>
+            Persistence is DBMS project which is works of Employee management
+            system.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem id="astro" title="Astro" thumbnail={Astro}>
             A Astro is E-Commerce website. At Astro, we strive to deliver the

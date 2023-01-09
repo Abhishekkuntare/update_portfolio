@@ -11,7 +11,7 @@ const Persistence = () => (
         Pokemon <Badge>2023</Badge>
       </Title>
       <P>
-        Pokemon is the very famouse cartoon. Accroding to Pokemon i'am using one
+        Pokemon is the very famouse cartoon. Accroding to Pokemon iam using one
         API to fetch all the information about Pokemon and also use the search
         fuctionality in it;
       </P>

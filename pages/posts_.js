@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   Box,
   Heading,
@@ -27,8 +27,6 @@ export const BlogAuthor = props => {
 }
 
 const ArticleList = ({ name, image, title, desc, author, date, color, id }) => {
-  const [open, SetOpen] = useState(false)
-
   return (
     <>
       <Container maxW={'7xl'} p="12">
@@ -55,7 +53,6 @@ const ArticleList = ({ name, image, title, desc, author, date, color, id }) => {
             >
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
-                  onClick={() => SetOpen(true)}
                   borderRadius="lg"
                   src={image}
                   alt="some good alt text"
@@ -108,7 +105,6 @@ const ArticleList = ({ name, image, title, desc, author, date, color, id }) => {
           </Box>
         </Box>
       </Container>
-
     </>
   )
 }

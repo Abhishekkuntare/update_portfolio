@@ -11,7 +11,6 @@ import {
   Heading,
   Text,
   Container,
-  Flex,
   Button
 } from '@chakra-ui/react'
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'

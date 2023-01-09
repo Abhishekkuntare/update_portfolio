@@ -5,9 +5,10 @@ const Fonts = () => (
     `}</style>
   ),
   (
-    <style>
-      @import
-      url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+    <style jsx global>
+      {`
+        @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+      `}
     </style>
   )
 )

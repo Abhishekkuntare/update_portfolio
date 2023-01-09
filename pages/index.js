@@ -16,12 +16,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import {
-  IoLogoGithub,
-  IoLinkSharp,
-  IoCodeSharp,
-  IoLogoLinkedin
-} from 'react-icons/io5'
+import { IoLogoGithub, IoCodeSharp, IoLogoLinkedin } from 'react-icons/io5'
 import { BiCodeCurly } from 'react-icons/bi'
 const Home = () => (
   <Layout>
@@ -67,13 +62,11 @@ const Home = () => (
           Intro
         </Heading>
         <Paragraph>
-          My Self Abhishek P. Kuntare I'm a Software Developer from Amravati.
-          I'm Programming enthusiast. I'm quick learner and ready to take new
+          My Self Abhishek P. Kuntare I am a Software Developer from Amravati. I
+          am Programming enthusiast. I am quick learner and ready to take new
           challenges
         </Paragraph>
-        {/* <NextLink href="/works/inkdrop">
-          <Link>Astro</Link>
-        </NextLink> */}
+
         <Box align="center" my={4}>
           <NextLink href="https://abhishekkuntare2002.web.app/">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
